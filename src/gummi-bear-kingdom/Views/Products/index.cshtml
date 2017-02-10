@@ -11,3 +11,4 @@
         <div class="product">@Html.ActionLink(product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit","Edit", new { id =product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</div>
     }
  </div>
+<a href='@Url.Action("Create", "Products")' class="btn btn-success">Add a Product</a>

@@ -7,13 +7,17 @@
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.ProductId)
-
-    @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
-    @Html.LabelFor(model => model.Price)
-    @Html.EditorFor(model => model.Price, new { type = "number", step = "0.01" })
-    @Html.LabelFor(model => model.CountryOfOrigin)
-    @Html.EditorFor(model => model.CountryOfOrigin)
-    <input type="submit" value="Update Product" />
-    <p>@Html.ActionLink("Back to Product list", "Index")</p>
-}
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name)
+        @Html.EditorFor(model => model.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Price)
+        @Html.EditorFor(model => model.Price, new { type = "number", step = "0.01" })
+    </div>
+    <div class="form-group">
+        <label>Country Of Origin</label>
+        @Html.EditorFor(model => model.CountryOfOrigin)
+    </div>
+        <input class="btn btn-success" type="submit" value="Update Product" />
+        }

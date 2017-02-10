@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Products";
+    ViewData["Title"] = "Delete Product";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model GummiBearKingdom.Models.Product
@@ -8,6 +8,5 @@
 <h3>This cannot be undone!</h3>
 @using (Html.BeginForm())
 {
-    <input type="submit" value="Confirm Delete" />
+    <input class="btn btn-danger" type="submit" value="Confirm Delete" />
 }
-@Html.ActionLink("Back to Product List", "Index")
