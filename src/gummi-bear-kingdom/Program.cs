@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace gummi_bear_kingdom
+namespace GummiBearKingdom
 {
     public class Program
     {
