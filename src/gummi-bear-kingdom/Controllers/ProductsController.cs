@@ -15,11 +15,18 @@ namespace GummiBearKingdom.Controllers
         {
             return View(db.Products.ToList());
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult Create(Product product)
         {
             db.Products.Add(product);
-            
-            return View();
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
