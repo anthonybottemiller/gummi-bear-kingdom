@@ -7,4 +7,5 @@
 <h2>Product Details</h2>
 @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
 @Html.DisplayNameFor(model => model.Price): @Html.DisplayFor(model => model.Price)
-<p>Country Of Origin</p> @Html.DisplayFor(model => model.CountryOfOrigin)
+<p>Country Of Origin @Html.DisplayFor(model => model.CountryOfOrigin) </p>
+<p>@Html.ActionLink("Back to product listing", "Index")</p>
