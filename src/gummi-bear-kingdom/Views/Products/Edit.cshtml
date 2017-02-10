@@ -4,6 +4,7 @@
 }
 @model GummiBearKingdom.Models.Product
 
+<div class="single-form">
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.ProductId)
@@ -20,4 +21,5 @@
         @Html.EditorFor(model => model.CountryOfOrigin)
     </div>
         <input class="btn btn-success" type="submit" value="Update Product" />
-        }
+ }
+</div>

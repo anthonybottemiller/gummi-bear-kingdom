@@ -1,7 +1,31 @@
-﻿.product {
+﻿.header {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.welcome {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.product {
     display: inline-block;
     padding: 10px;
     margin: 10px;
     border: 3px solid red;
     border-radius: 15px;
+}
+
+.about {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.single-form {
+    text-align: center;
 }

@@ -6,9 +6,11 @@
 
  <h1>Products</h1>
 <div class="col-md-3">
+    <div class="product">
+        <a href='@Url.Action("Create", "Products")' class="btn btn-success">Add a Product</a>
+    </div>
     @foreach(var product in Model)
     {
         <div class="product">@Html.ActionLink(product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit","Edit", new { id =product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</div>
     }
  </div>
-<a href='@Url.Action("Create", "Products")' class="btn btn-success">Add a Product</a>

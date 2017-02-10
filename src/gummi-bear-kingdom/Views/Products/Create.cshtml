@@ -3,8 +3,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model GummiBearKingdom.Models.Product
-<h2>Add a New Product</h2>
 
+<div class="single-form">
+<h2>Add a New Product</h2>
 @using (Html.BeginForm())
 {
     <div class="form-group">
@@ -20,4 +21,5 @@
         @Html.TextBoxFor(model => model.CountryOfOrigin)
     </div>
         <input class="btn btn-success" type="submit" value="Add new product" />
-        }
+}
+</div>
