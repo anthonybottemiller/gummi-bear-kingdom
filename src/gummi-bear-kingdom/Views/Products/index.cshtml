@@ -8,6 +8,6 @@
  <ul>
     @foreach(var product in Model)
     {
-        <li>@Html.DisplayFor(productLine => product.Name)</li>
+        <li>@Html.DisplayFor(productLine => product.Name) | @Html.ActionLink("Details", "Details", new { id = product.ProductId })</li>
     }
  </ul>

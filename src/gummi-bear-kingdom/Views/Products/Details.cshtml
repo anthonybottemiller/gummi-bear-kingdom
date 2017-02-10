@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model GummiBearKingdom.Models.Product
+
+<h2>Product Details</h2>
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@Html.DisplayNameFor(model => model.Price): @Html.DisplayFor(model => model.Price)
+<p>Country Of Origin</p> @Html.DisplayFor(model => model.CountryOfOrigin)
