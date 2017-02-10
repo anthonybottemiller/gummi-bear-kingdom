@@ -8,6 +8,7 @@
  <ul>
     @foreach(var product in Model)
     {
-        <li>@Html.DisplayFor(productLine => product.Name) | @Html.ActionLink("Details", "Details", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</li>
+        <li>@Html.ActionLink(product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit","Edit", new { id =product.ProductId })| @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</li>
     }
  </ul>
+<p>@Html.ActionLink("Add new product", "Create")</p>
