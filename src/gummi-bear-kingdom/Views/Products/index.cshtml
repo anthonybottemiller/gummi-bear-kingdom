@@ -2,4 +2,12 @@
     ViewData["Title"] = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>Products</h1>
+@model IEnumerable<GummiBearKingdom.Models.Product>
+
+ <h1>Products</h1>
+ <ul>
+    @foreach(var product in Model)
+    {
+        <li>@Html.DisplayFor(productLine => product.Name)</li>
+    }
+ </ul>
