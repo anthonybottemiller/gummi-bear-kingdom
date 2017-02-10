@@ -5,10 +5,10 @@
 @model IEnumerable<GummiBearKingdom.Models.Product>
 
  <h1>Products</h1>
- <ul>
+<div class="col-md-3">
     @foreach(var product in Model)
     {
-        <li>@Html.ActionLink(product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit","Edit", new { id =product.ProductId })| @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</li>
+        <div class="product">@Html.ActionLink(product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit","Edit", new { id =product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</div>
     }
- </ul>
+ </div>
 <p>@Html.ActionLink("Add new product", "Create")</p>

@@ -1,5 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Welcome";
+    ViewData["Title"] = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
- <h1>Welcome!</h1>
+<div class="jumbotron">
+    <h1>Welcome to Gummi Bear Kingdom!</h1>
+    <a href='@Url.Action("Index", "Products")' class="btn btn-primary">Products</a>
+    <a href='@Url.Action("About")' class="btn btn-primary">About</a>
+</div>
