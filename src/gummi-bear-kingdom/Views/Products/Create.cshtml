@@ -10,7 +10,7 @@
     @Html.LabelFor(model => model.Name)
     @Html.TextBoxFor(model => model.Name)
     @Html.LabelFor(model => model.Price)
-    @Html.TextBoxFor(model => model.Price, new { @type = "number"})
+    @Html.TextBoxFor(model => model.Price, new { type = "number", step="0.01" })
     @Html.LabelFor(model => model.CountryOfOrigin)
     @Html.TextBoxFor(model => model.CountryOfOrigin)
     <input type="submit" value="Add new product" />
