@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model GummiBearKingdom.Models.Product
+
+<h2>Are you sure you wish to remove @Html.DisplayFor(model => model.Name) from the database?</h2>
+<h3>This cannot be undone!</h3>
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Confirm Delete" />
+}
+@Html.ActionLink("Back to Product List", "Index")
