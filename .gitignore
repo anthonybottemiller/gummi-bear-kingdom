@@ -1,4 +1,4 @@
 /src/gummi-bear-kingdom/Migrations
-/src/obj
-/src/bin
+/src/gummi-bear-kingdom/bin
+/src/gummi-bear-kingdom/obj
 project.lock.json
