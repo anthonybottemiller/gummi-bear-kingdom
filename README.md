@@ -35,7 +35,7 @@ The style of the project was inspired by [Rocket Fizz](http://www.rocketfizz.com
 * Execute command "dotnet ef migrations add Initial"
 * Execute command "dotnet ef database update"
 * Execute command "dotnet run"
-* Navigate to webserver using your favorite browser
+* Navigate to [webserver](http://localhost:5000) using your favorite browser
 
 ##Legal
 Copyright (c) 2017 Anthony J Bottemiller
