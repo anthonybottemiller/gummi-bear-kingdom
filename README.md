@@ -25,7 +25,7 @@ This project will provide Gummi Bear Kingdom with a web application that provide
 * Internet Access
 
 ##Style Inspiration
-The style of the project was inspired by [Rocket Fizz](www.rocketfizz.com)
+The style of the project was inspired by [Rocket Fizz](https://rocketfizz.com)
 
 ##Installation
 * Clone repository
