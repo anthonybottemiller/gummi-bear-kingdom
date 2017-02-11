@@ -24,6 +24,9 @@ This project will provide Gummi Bear Kingdom with a web application that provide
 * SQL Server
 * Internet Access
 
+##Style Inspiration
+The style of the project was inspired by [Rocket Fizz](www.rocketfizz.com)
+
 ##Installation
 * Clone repository
 * Using command line change working directory to cloned repository
